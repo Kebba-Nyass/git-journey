@@ -1,0 +1,54 @@
+get --version
+git init
+git status
+git add --all // stage every single change across the entire project
+git add -A   // stage every single change across the entire project
+git add .   // stage the changes within the current directory you're in
+git add *  // stage new or modified files and not deleted ones
+git reset // to reset the changes made
+git add two.txt // only stage the two.txt
+git add *.txt // stage all files ending with .txt
+git commit -m "I have made some changes to files"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name".
+git config --local user.email "you@example.com" // to apply it to only a particular repository
+git reset HEAD~ // undo the last commit and return everything back to the last commit.
+git rm four.txt // to delete a file.
+git reset --hard // to reset changes made and bring back deleted files.
+git rm -f or --force four.txt // to forcefully remove a file that is being modified without being stage.
+git rm --cached four.txt // only removes it from staging.
+git rm -r myFolder // to remove the folder/directory and it contains.
+git log // to view commits.
+git branch // to show the list of all branches.
+git branch development // to create a new branch call development.
+git checkout development // to switch to a another branch call development.
+git merge main -m // "Merging main into development"
+git log --oneline 
+git checkout 6b4bf88 
+git diff 6b4bf88 1b296b8 // to compare two commits
+PUSH // Sending local changes to the remote.
+FETCH // Bringing remote changes into your local repository, but not merging them yet.
+PULL // Fetching plus merging-so your working directory immediately reflects the remote changes.
+PULL = FETCH + MERGE
+git push origin main
+git checkout staging
+git push origin staging
+git checkout development
+git push origin development
+git fetch
+git merge
+git pull
+git restore // Use to restore a file back to it previous state
+git restore one.txt // It will restore one.txt back to it previous state
+git restore . // It restore a file back to it previous state 
+git stash // Temporarily set aside your unfinished work, switch to another branch to do something.
+git stash pop // To reshore the state of a file from a stash state. 
+git stash list // To list files in stash mode.
+git stash apply // To reshore the state of files in stash while storing it in stash
+git stash pop stash@{0}
+git stash apply stash@{0}
+git stash drop
+git revert // Used to undo the changes made in a previous commit, but instead of deleting that old commit, it creates a new one that reverses those changes.
+git reset
+git rebase main
+git pull request
